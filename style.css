@@ -30,197 +30,222 @@
     font-family:"montserrat";
     src: url(fontes/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2);
 }
-  
-body{
-    overflow-x: hidden;
-    margin: 0;
-    background-image: url(assets/asset\ 12.jpeg);
-    background-size: 100% 6%;
-    background-repeat: no-repeat;
-    background-color:#022C5C ;
-}
 
-#botao_fixo img{
-    width: 100px;
-    position:fixed;
-    margin-top: 450px;
-    margin-left: 40px;
-}
-
-header{
-    display: flex;
-    justify-content: center;
-    background-color:#20456F ;
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 50px;
-}
-
-.img{
-    display: inline-block;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.linha{
-    display: inline-block;
-    justify-content: center;
-    height: 50px;
-    border-right: 1px solid white;
-}
-
-.img1{
-    width: 120px;
-    padding-right: 2px;
-    margin-bottom: 7px;
-    margin-right: 5px;
-}
-
-.img2{
-    padding-left: 2px;
-    width: 100px;
-    margin-bottom: 7px;
-    margin-left: 5px;
-}
-
-h1{
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 750px;
-    font-family:"neo sans pro bold";
-    font-size: 1.7em;
-    text-align: center;
-    color: white;
-
-}
-
-.thumb{
-    display: block;
-    margin: auto;
-    width: 500px;
-    
-}
-
-a{
+*{
     text-decoration: none;
+    font-family: var(--font-montserrat);
+    overflow-x: hidden;
+}
+  
+:root{
+    --cor1:#022C5C;
+    --cor2:#214771;
+    --cor3:#FF6600;
+    --cor4:#B95619;
+    --cor5:#00ED00;
+    --cor6:#8DB32E;
+    --cor7:#F1F1F1;
+    --cor8:#6699FF;
+    --cor9:#E6E7E8;
+    --font-montserrat:"montserrat",Arial,Helvetica,sans-serif;
+    --font-neo-sans:"neo sans pro",Arial,Helvetica,sans-serif;
+    --font-neo-sans-light:"neo sans pro light",Arial,Helvetica,sans-serif;
+}
+   /* \\\\\\\\\\\\\\\\\\\\ NOTEBOOK E PC \\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media (max-width:1940px) {
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        background:url(assets/asset\ 12.jpeg) no-repeat,url(assets/asset\ 18.png) bottom right /auto 100% fixed no-repeat;
+        background-color: #022C5C;
+    }
+    
+    a#botao_fixo > img{
+        position: fixed;
+        top: 75%;
+        width: 100px;
+    }
+    
+    header {
+        margin: auto;
+        margin-top: 20px;
+        background-color: #214771;
+        width: 98%;
+        text-align: center;
+    }
+    
+    header > img{
+        width: 120px;
+    }
+    
+    header > img.img1{
+        padding-right: 2px;
+    }
+    
+    header > img.img2 {
+        width: 100px;
+        border-left: 1px solid white;
+        padding-top: 5px;
+        padding-left: 4px;
+        padding-bottom: 5px;
+        margin-bottom: -4px;
+    }
+    
+    main {
+        text-align: justify;
+    }
+    
+    main  h1 {
+        font-family: "neo sans pro",Arial, Helvetica, sans-serif ;
+    }
+    
+    main p {
+        font-family: "montserrat",Arial, Helvetica, sans-serif;
+    }
+    
+    div.container1 > h1{
+        padding: 10px;
+        color: white;
+        margin: auto;
+        text-align: center;
+        width: 600px;
+    }
+    
+    div.container1 > img {
+        display: block;
+        width: 600px;
+        margin: auto;
+        padding: 10px 0px 20px 0px;
+    }
+    
+    div.container1 > a {
+        display: block;
+        width: 600px;
+        height: 60px;
+        margin: auto;
+        text-align: center;
+        background-color: #FF6600;
+        color: white;
+        font-family:var(--font-neo-sans-light);
+        font-size: 1.2em;
+        padding: 20px 0px 10px 0px;
+        border-radius: 5px;
+    }
+    
+    div.container1 > a:hover {
+        transition-duration: 0.5s;
+        background-color: #8DB32E;
+    }
+
+    div.faixa >img {
+        position: relative;
+        width: 101%;
+        margin-left:-5px ;
+        margin-top: -250px;
+        
+    }
+
+    div.faixa > span{
+        position: absolute;
+        columns: 2;
+        top: 700px;
+        margin-left: 200px;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+    }
+
 }
 
-.botaolaranja {
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-    width: 500px;
-    height: 80px;
-    background-color:#FF6600 ;
-    border: none;
-}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\ CELULAR \\\\\\\\\\\\\\\\\\\\\\\\ */
 
-.botaolaranja:hover{
-    cursor: pointer;
-    background-color:#8DB32E;
-}
-
-p{
-    font-family: "neo sans pro regular";
-    font-size: 1.3em;
-    color: white;
-}
-
-aside>img{
-    display:flex;
-    justify-content: left;
-    width: 101%;
-    height: 230px;
-    object-position: 100% 55%;
-    object-fit: cover;
-    margin-left: -5px;
-    margin-top: 10px;
-     
-}
-
-@media (max-width: 500px) { /* celular */
+@media (max-width:450px) {
     
     body{
-        overflow-x: hidden;
+        margin: 0px;
+        padding: 0px;
+        background:url(assets/asset\ 12.jpeg) no-repeat,url(assets/asset\ 18.png) bottom right /auto 100% fixed no-repeat;
+        background-color: #022C5C;
     }
     
-    #botao_fixo img{
+    a#botao_fixo > img{
+        position: fixed;
+        top: 75%;
         width: 80px;
-        position:fixed;
-        margin-top: 450px;
-        margin-left: 20px;
-    }
-    header{
-    display: flex;
-    justify-content: center;
-    background-color:#20456F ;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 40px;
-    }
-
-    h1.img{
-        margin-top: 0px;
-    }
-
-    .linha{
-        margin-bottom: 7px;
-        height: 40px;
-    }
-
-    img.img1{
-        width: 100px;
-        margin-bottom: 12px;
-    }
-    img.img2{
-        width: 90px;
-        margin-bottom: 10px;
-    }
-
-    h1{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 350px;
-        font-family:"neo sans pro bold";
-        font-size: 1.5em;
-        text-align: center;
-        color: white;
-    }
-
-    .thumb{
-        margin: auto;
-        display: block;
-        width: 350px;
-    }
-
-    a{
-        text-decoration: none;
-    }
-
-    a>button {
-        display: block;
-        margin: auto;
-        margin-top: 10px;
-        width: 350px;
-        height: 80px;
-        background-color:#FF6600 ;
-        border: none;
-    }
-
-    a>button:hover{
-        cursor: pointer;
-        background-color:#8DB32E;
     }
     
-    p{
-        font-family: "neo sans pro regular";
-        font-size: 1.3em;
-        width: 200px;
+    header {
         margin: auto;
-        color: white;
+        margin-top: 20px;
+        background-color: #214771;
+        width: 95%;
+        text-align: center;
     }
+    
+    header > img{
+        width: 100px;
+    }
+    
+    header > img.img1{
+        padding-right: 2px;
+    }
+    
+    header > img.img2 {
+        width: 80px;
+        border-left: 1px solid white;
+        padding-top: 5px;
+        padding-left: 4px;
+        padding-bottom: 5px;
+        margin-bottom: -4px;
+    }
+    
+    main {
+        text-align: justify;
+    }
+    
+    main  h1 {
+        font-family: "neo sans pro",Arial, Helvetica, sans-serif ;
+    }
+    
+    main p {
+        font-family: "montserrat",Arial, Helvetica, sans-serif;
+    }
+    
+    div.container1 > h1{
+        padding: 10px;
+        color: white;
+        margin: auto;
+        text-align: center;
+        font-size: 0.8em;
+        width: 300px;
+    }
+    
+    div.container1 > img {
+        display: block;
+        width: 300px;
+        margin: auto;
+        padding: 10px 0px 20px 0px;
+    }
+    
+    div.container1 > a {
+        display: block;
+        width: 300px;
+        height: 40px;
+        margin: auto;
+        text-align: center;
+        background-color: #FF6600;
+        color: white;
+        font-family:var(--font-neo-sans-light);
+        font-size: 0.9em ;
+        border-radius: 5px;
+    }
+    
+    div.container1 > a:hover {
+        transition-duration: 0.5s;
+        background-color: #8DB32E;
+    }
+
 }
